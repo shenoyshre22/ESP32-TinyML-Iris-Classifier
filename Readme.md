@@ -65,7 +65,7 @@ To get this project running on your hardware, clone the repository using
 
 Standard output when the random example values entered in the above strip were:
 5.1828 , 3.6767, 9.888,0.1999
-![alt text](image.png)
+![alt text](image-1.png)
 
 When absurd values like 0,0,0,0 is entered the output is :
 ![alt text](image-1.png)
