@@ -52,12 +52,20 @@ To get this project running on your hardware, clone the repository using
 ```
  and open `iris_flwr.ino` inside the Arduino IDE. Ensure your `model.h` file remains in the same directory before flashing the code over to your connected ESP32 board. Once uploaded, launch your Serial Monitor at **115200 baud** to input test measurements. 
  However , If you want to experiment, modify, or retrain the underlying Random Forest model yourself, simply upload the `Iris_flwr_dataset.ipynb` file straight into Google Colab, connect it to the standard dataset, and run the Python cells to auto-generate a brand new C++ model array.
-
-
+---
 ##  File Directory Mapping
 
 ```text
 ├── iris_flwr.ino      # Main executable Arduino program wrapper (handles Serial I/O & logic)
 └── model.h            # Patched C++ optimized blueprint array of the trained machine learning model
 └── Iris_flwr_dataset.ipynb #the python file which runs on google colab
+```
+---
+## What the Output looks like
 
+Standard output when the random example values entered in the above strip were:
+5.1828 , 3.6767, 9.888,0.1999
+![alt text](image.png)
+
+When absurd values like 0,0,0,0 is entered the output is :
+![alt text](image-1.png)
