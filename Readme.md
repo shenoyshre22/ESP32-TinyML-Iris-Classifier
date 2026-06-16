@@ -69,3 +69,6 @@ Standard output when the random example values entered in the above strip were:
 
 When absurd values like 0,0,0,0 is entered the output is :
 ![alt text](image-1.png)
+
+Also some values like 90,889,102,67 the output is:
+![alt text](image.png)
