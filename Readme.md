@@ -50,8 +50,12 @@ To get this project running on your hardware, clone the repository using
 ```bash
 `git clone https://github.com/shenoyshre22/ESP32-TinyML-Iris-Classifier.git`
 ```
- and open `iris_flwr.ino` inside the Arduino IDE. Ensure your `model.h` file remains in the same directory before flashing the code over to your connected ESP32 board. Once uploaded, launch your Serial Monitor at **115200 baud** to input test measurements. 
+then open `iris_flwr.ino` inside the Arduino IDE. Ensure your `model.h` file remains in the same directory before flashing the code over to your connected ESP32 board. Once uploaded, launch your Serial Monitor at **115200 baud** to input test measurements. 
  However , If you want to experiment, modify, or retrain the underlying Random Forest model yourself, simply upload the `Iris_flwr_dataset.ipynb` file straight into Google Colab, connect it to the standard dataset, and run the Python cells to auto-generate a brand new C++ model array.
+
+
+
+
 ---
 ##  File Directory Mapping
 
@@ -65,10 +69,12 @@ To get this project running on your hardware, clone the repository using
 
 Standard output when the random example values entered in the above strip were:
 5.1828 , 3.6767, 9.888,0.1999
-![alt text](image-1.png)
+<img width="879" height="118" alt="image" src="https://github.com/user-attachments/assets/3531c2cf-fd75-44a1-8417-0e91a327a396" />
+
 
 When absurd values like 0,0,0,0 is entered the output is :
-![alt text](image-1.png)
+<img width="873" height="133" alt="image" src="https://github.com/user-attachments/assets/8c3457c3-cc2b-4c63-9114-859ca4a17dfb" />
+
 
 Also some values like 90,889,102,67 the output is:
-![alt text](image.png)
+<img width="879" height="118" alt="image" src="https://github.com/user-attachments/assets/b1fe375d-3fa4-4ccb-9548-026b883171ab" />
